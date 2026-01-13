@@ -1,0 +1,93 @@
+               <!-- In this we will learn about CSS Selectors Masterclass -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /*  Element Selector */
+        div {
+            background-color: yellow;
+        }
+
+        /* Class Selector */
+        .red {
+            background-color: red;
+        }
+
+        /* Id Selector */
+
+        #green {
+            background-color: green;
+        }
+
+        /* Child Selectors */
+
+        div>p {
+            color: aqua;
+            background-color: bisque;
+
+        }
+
+        /* Descendant Selector */
+
+        div p {
+            color: aqua;
+            background-color: bisque;
+
+        }
+
+        /* Universal Selector */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: yellowgreen;
+        }
+
+        a:link {
+            color: rgb(0, 132, 240);
+        }
+
+        a:active {
+            background-color: burlywood;
+        }
+
+        a:hover {
+            background-color: blueviolet;
+        }
+
+       main p:first-child {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am one</p>
+        <p>I am two</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore debitis molestiae perspiciatis asperiores
+                laboriosam voluptates ipsa, adipisci, hic eos voluptatem modi aspernatur pariatur ipsam sapiente
+                perferendis. Numquam maxime repudiandae consectetur?</p>
+        </article>
+
+    </div>
+    <div id="green">
+        I am another div
+    </div>
+    <a href="https://www.google2.com/">Go To Google</a>
+    <a href="https://www.facebook2.com/">Go To Facebook</a>
+</body>
+
+</html>
