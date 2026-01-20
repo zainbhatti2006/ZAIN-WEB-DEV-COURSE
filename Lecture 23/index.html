@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display */
+
+    .box{
+        border: 2px solid blue;
+        display: inline-block;
+        padding: 45px;
+        margin: 34px;
+        display: inline-flex;
+        justify-content: center;
+    }    
+    /* .box1{
+        display: none;
+        visibility:hidden;
+        display: flex;
+        justify-content: center;
+    }     */
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        This is a Box
+    </div>
+    <div class="box"> This is another Box</div>
+    <span>I am a good</span>
+</body>
+</html>
