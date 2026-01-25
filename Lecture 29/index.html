@@ -1,0 +1,124 @@
+<!-- In this we will do Exercise 3: Card Design -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3: Card Design</title>
+    <style>
+        body {
+            display: flex;
+            font-family: sans-serif;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            min-height: 100vh;
+            background-color: gray;
+        }
+
+        .card {
+            background-color: burlywood;
+            /* border: 2px solid black; */
+            width: 250px;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            display: block;
+            border-radius: 15px;
+            height: auto;
+            width: 100%;
+
+        }
+
+
+        .capsules {
+            margin-top: 15px;
+        }
+
+        .capsules span {
+            display: inline-block;
+            font-weight: lighter;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 4px 12px;
+            margin-right: 3px;
+            cursor: pointer;
+            background-color: burlywood;
+        }
+
+        .capsules span:hover {
+            transform: scale(1.05);
+            background-color: rgb(225, 132, 18);
+        }
+
+        .content h2 {
+            color: black;
+            font-size: 1.5rem;
+            margin: 15px 0 10px 0;
+        }
+
+        .content p {
+            text-align: left;
+            color: black;
+            line-height: 1.5;
+
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button button {
+            border: 1px solid black;
+            border-radius: 15px;
+            width: 100px;
+            padding: 8px;
+            text-align: center;
+            color: black;
+            background-color: burlywood;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: transform(0.2s);
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: bold;
+        }
+
+        .button button:hover {
+            transform: scale(1.05);
+            background-color: rgb(225, 132, 18);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img class="img"
+            src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXJsfGVufDB8fDB8fHww"
+            width="188px">
+
+        <br>
+        <div class="capsules">
+            <span>Buisness</span>
+            <span>Meeting</span>
+        </div>
+        <div class="content">
+            <h2>Buisness Meeting</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam ipsa ab in ut placeat natus, pariatur
+                voluptas qui! Corporis, cupiditate inventore! Iusto asperiores corporis, dolor nemo amet facilis quidem
+                eos.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
