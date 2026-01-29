@@ -1,0 +1,65 @@
+<!-- In this we will solve Exercise 4:Multi-color Website -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4:Multi-color Website</title>
+    <style>
+        :root {
+            --color: rgb(187, 100, 241);
+            --seccolor: rgb(205, 11, 244);
+            --text: rgb(13, 13, 13);
+            --colorhover: rgb(146, 82, 160);
+        }
+
+        * {
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: var(--seccolor);
+        }
+
+        nav {
+            background-color: var(--color);
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li a {
+            margin: 0;
+            display: block;
+            padding: 10px 25px;
+            font-weight: bolder;
+            color: var(--text);
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        li a:hover {
+            background-color: rgba(160, 125, 73, 0.1);
+            color: var(--colorhover);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact Us</a></li>
+            <li><a href="/">Services</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
