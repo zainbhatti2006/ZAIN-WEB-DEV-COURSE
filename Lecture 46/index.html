@@ -1,0 +1,64 @@
+<!-- In this we will learn CSS Animation Property -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation Property</title>
+    <style>
+      .container {
+        background-color: green;
+        height: 80vh;
+        width: 30vw;
+      }
+
+      .box {
+        height: 45px;
+        width: 35px;
+        /* animation-name: ZainKaAnimation;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        animation-play-state: running; */
+        animation: ZainKaAnimation 2s ease-in-out 3s 1 backwards, Zain2 3s ease-in-out 3s 1;
+      }
+
+      @keyframes ZainKaAnimation {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: blueviolet;
+          transform: translateX(1000px);
+        }
+      }
+
+      @keyframes Zain2 {
+        0%{
+             transform: rotate(100deg);
+        }
+        20%{
+             transform: rotate(200deg);
+        }
+        50%{
+             transform: rotate(220deg);
+        }
+
+        80%{
+             transform: rotate(300deg);
+        }
+        100%{
+            transform: rotate(310deg);
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">BOX</div>
+    </div>
+  </body>
+</html>
